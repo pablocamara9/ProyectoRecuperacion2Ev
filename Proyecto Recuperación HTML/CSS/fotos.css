@@ -1,0 +1,284 @@
+/* Fuentes personalizadas */
+@font-face {
+    font-family:  modernAge;
+    src: url(../fonts/modernAge.ttf);
+}
+
+@font-face {
+    font-family: socialMedia;
+    src: url(../fonts/socialMedia.ttf);
+}
+
+/* Imagen de fondo para la página */
+body{
+    background-image: url(../media/fondo.png);
+    background-repeat: repeat;
+    margin: 0;
+}
+
+/* Decoración para los textos */
+i{
+    font-style: normal;
+    color: rgb(100,110,203);
+}
+
+/* Encabezado de página */
+header{
+    display: flex;
+    background-color: rgb(31, 28, 28);
+    
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+}
+
+header>div{
+    display: inline;
+    align-items: center;
+    margin: auto;
+}
+
+header>div>h1, h5{
+    color: white;
+    text-align: center;
+    font-family: 'modernAge';
+}
+
+/* Barra de navegación */
+nav{
+    background-color: rgb(51, 51, 51);
+}
+  
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li{
+    float: left;
+}
+  
+nav li a{
+    font-family: 'Helvetica';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover{
+    background-color: rgb(31, 28, 28);
+    color: rgb(100,110,203);
+}
+
+/* Footer */
+footer{
+    background-color: rgb(31, 28, 28);
+    display: flex;
+}
+
+.contenedorLogo{
+    width: 33%;
+    text-align: center;
+    display: block;
+}
+
+.contenedorLogo>h5{
+    font-family: 'modernAge';
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contenedorLogo>hr{
+    width: 300px;
+}
+
+.contacto{
+    text-align: center;
+    width: 33%;
+    display: block;
+}
+
+.contacto>p{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-family: 'Helvetica';
+    color: white;
+}
+
+.contacto>h5{
+    margin: 5px 0px;
+}
+
+.contacto>hr{
+    width: 300px;
+}
+
+.verTambien{
+    width: 33%;
+    text-align: center;
+}
+
+.verTambien>h5{
+    margin: 5px 0px;
+}
+
+.verTambien>a{
+    color: white;
+    font-family: 'Helvetica';
+}
+
+.verTambien>hr{
+    width: 300px;
+}
+
+.copyright{
+    display: flex;
+    background-color: rgb(38, 35, 35);
+    justify-content: center;
+}
+
+.copyright>p, .copyright>p>a{
+    color: white;
+    font-family: 'Helvetica';
+}
+
+/* Carrousel */
+#envoltorio{
+    margin:  0 auto;
+}
+
+.titulo{
+    text-align: center;
+    background-color: rgb(100,110,203, 0.8);
+    height: 0%;
+    margin-top: -22px;
+    margin-bottom: -22px;
+    font-family: 'Helvetica';
+}
+
+.titulo>h1{
+    background-color: black;
+    border-radius: 20px;
+    font-family: 'modernAge';
+    color: white;
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding: 2px 0px 2px 0px;
+    width: 400px;
+    justify-content: center;
+}
+
+#container{
+    background-color: rgb(100,110,203, 0.5);
+    display: flex;
+    justify-content: space-around;
+}
+
+#container .fl{
+    text-align: center;
+    align-self: center;
+}
+
+#container .fl img{
+    width: 30%;
+}
+
+#container .fl img:hover{
+    width: 40%;
+}
+
+.fl{
+    width: 20%;
+}
+
+.foto{
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.foto img{
+    margin: 0 auto;
+}
+
+.foot{
+    background-color: rgb(100,110,203, 0.8);
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot p.num{
+    text-align: right;
+    padding-right: 50px;
+    letter-spacing: 1px;
+}
+
+.foot .no{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.foot .no:hover, .on:hover{
+    font-size: larger;
+}
+
+.on{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.txt{
+    padding-left: 50px;
+    font-family: 'Helvetica';
+    font-size: 15px;
+}
+
+.fecha{
+    font-family: 'Helvetica';
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    padding: 4px 0px 2px 0px;
+    text-align: right;
+}
+
+#separador{
+    width: 1px;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Tamaño foto publicaciones */
+.fotoPublicacion{
+    width: 400px;
+    height: 300px;
+}
+
+/* Contenedor y contenido interacciones con la publicación */
+.interaccion{
+    width: 50px;
+    border: 2px solid black;
+}
+
+.imgInteraccion{
+    padding: 13px 0px 13px 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.imgInteraccion:hover{
+    width: 35px;
+    height: 35px;
+}

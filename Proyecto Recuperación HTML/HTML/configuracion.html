@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/configuracion.css">
+    <title>Configuración</title>
+</head>
+<body>
+    <!-- Encabezado página -->
+    <header>
+        <a href="index.html"><img src="../media/LogoLinkup.PNG" alt="Linkup Logo" class="logo"></a>
+        <div>
+            <h1>Link<i>up</i></h1>
+            <h5>Chatea con tus <i>amigos</i>, crea nuevos <i>vínculos</i></h5>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="miPerfil.html">Mi Perfil</a></li>
+          <li><a href="lineaTiempo.html">Línea del Tiempo</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="amigos.html">Amigos</a></li>
+          <li><a href="configuracion.html">Configuración</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario configuración usuario -->
+    <div class="titulo">
+        <h2>Editar <i>datos</i></h2>
+    </div>
+    <div class="contenedorFormulario">
+        <form>
+            <div id="contenedorImgBtn">
+                <img src="../media/miFotoPerfil.jpg" alt="Mi foto de perfil" id="miFotoPerfil">
+                <p id="nombre">Capibara Lover</p>
+                <p id="usuario">@capibaraLover</p>
+                <br>
+                <button type="button">Editar foto de perfil</button>
+                <button type="button">Eliminar foto de perfil</button>
+            </div>
+            <hr>
+            <div class="bloque">
+                <label for="nombre" class="labelContenido">Nombre: *</label>
+                <input type="text" class="inputContenido" name="nombre" placeholder="Introduzca su nombre:" required>
+            </div>
+            <div class="bloque">
+                <label for="nombreUsuario" class="labelContenido">Nombre de usuario: *</label>
+                <input type="text" class="inputContenido" name="nombreUsuario" placeholder="Introduzca un nombre de usuario:" required>
+            </div>
+            <div class="bloque">
+                <label for="correo" class="labelContenido">Correo electrónico: *</label>
+                <input type="email" class="inputContenido" name="correo" placeholder="Introduzca su correo electrónico:" required>
+            </div>
+            <div class="bloque">
+                <label for="password" class="labelContenido">Editar contraseña:</label>
+                <input type="password" class="inputContenido" name="password" placeholder="Introduzca una contraseña (opcional):">
+            </div>
+            <div class="bloque">
+                <label for="telefono" class="labelContenido">Teléfono:</label>
+                <input type="tel" class="inputContenido" name="telefono" placeholder="Introduzca su teléfono (opcional):">
+            </div>
+            <div class="bloque">
+                <label for="direccion" class="labelContenido">Dirección:</label>
+                <input type="text" class="inputContenido" name="direccion" placeholder="Introduzca su dirección (opcional):">
+            </div>
+            <div class="bloque">
+                <label for="sobreMi" class="labelContenido">Sobre mí:</label>
+                <textarea id="sobreMi" class="inputContenido" placeholder="Escriba una descripción sobre usted (opcional):"></textarea>
+            </div>
+            <div class="bloque">
+                <label for="privacidad" class="labelContenido">Privacidad de mis publicaciones: *</label>
+                <div class="bloquePrivacidad">
+                    <input type="radio" name="privacidad" id="todoElMundo" checked>
+                    <label for="todoElMundo" class="labelPrivacidad"><img src="../media/todos.png" alt="Img todo el mundo" class="imgPrivacidad">Todo el mundo</label>
+                    <br>
+                    <input type="radio" name="privacidad" id="misAmigos">
+                    <label for="misAmigos" class="labelPrivacidad"><img src="../media/amigos.png" alt="Img mis amigos" class="imgPrivacidad">Mis amigos</label>
+                    <br>
+                    <input type="radio" name="privacidad" id="soloYo">
+                    <label for="soloYo" class="labelPrivacidad"><img src="../media/ojoTachado.png" alt="Img solo yo" class="imgPrivacidad">Solo yo</label>
+                </div>
+            </div>
+            <p id="aviso">*Campo obligatorio</p>
+            <div class="contenedorBoton">
+                <button type="submit">Guardar cambios</button>
+                <button type="button">Descartar cambios</button>
+            </div>
+        </form>
+    </div>        
+
+    <!-- Footer -->
+    <footer>
+        <br>
+        <div class="contenedorLogo">
+          <h5>Link<i>up</i></h5>
+          <hr>
+          <a href="index.html"><img src="../media/LogoLinkup.PNG" alt="Logo Linkup" class="logo"></a>
+        </div>
+        <div class="verTambien">
+          <h5>Véase <i>también</i></h5>
+          <hr><br>
+          <a href="#">Política de privacidad</a>
+          <br><br>
+          <a href="#">Nuestras cookies</a>
+        </div>
+        <div class="contacto">
+          <h5>Nuestro <i>contacto</i></h5>
+          <hr>
+          <p>41089 - Montequinto, Sevilla</p>
+          <p>support@linkup.com</p>
+          <p>+34 660 229 922</p>
+          <p>+34 954 119 160</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>	© Copyright 2023: <a href="index.html">www.linkup.com</a></p>
+    </div>
+    
+</body>
+</html>

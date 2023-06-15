@@ -1,0 +1,235 @@
+/* Fuentes personalizadas */
+@font-face {
+    font-family:  modernAge;
+    src: url(../fonts/modernAge.ttf);
+}
+
+@font-face {
+    font-family: socialMedia;
+    src: url(../fonts/socialMedia.ttf);
+}
+
+/* Imagen de fondo para la página */
+body{
+    background-image: url(../media/fondo.png);
+    background-repeat: repeat;
+    margin: 0;
+}
+
+/* Decoración para los textos */
+i{
+    font-style: normal;
+    color: rgb(100,110,203);
+}
+
+/* Encabezado de página */
+header{
+    display: flex;
+    background-color: rgb(31, 28, 28);
+    
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+}
+
+header>div{
+    display: inline;
+    align-items: center;
+    margin: auto;
+}
+
+header>div>h1, h5{
+    color: white;
+    text-align: center;
+    font-family: 'modernAge';
+}
+
+/* Barra de navegación */
+nav{
+    background-color: rgb(51, 51, 51);
+}
+  
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li{
+    float: left;
+}
+  
+nav li a{
+    font-family: 'Helvetica';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover{
+    background-color: rgb(31, 28, 28);
+    color: rgb(100,110,203);
+}
+
+/* Footer */
+footer{
+    background-color: rgb(31, 28, 28);
+    display: flex;
+}
+
+.contenedorLogo{
+    width: 33%;
+    text-align: center;
+    display: block;
+}
+
+.contenedorLogo>h5{
+    font-family: 'modernAge';
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contenedorLogo>hr{
+    width: 300px;
+}
+
+.contacto{
+    text-align: center;
+    width: 33%;
+    display: block;
+}
+
+.contacto>p{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-family: 'Helvetica';
+    color: white;
+}
+
+.contacto>h5{
+    margin: 5px 0px;
+}
+
+.contacto>hr{
+    width: 300px;
+}
+
+.verTambien{
+    width: 33%;
+    text-align: center;
+}
+
+.verTambien>h5{
+    margin: 5px 0px;
+}
+
+.verTambien>a{
+    color: white;
+    font-family: 'Helvetica';
+}
+
+.verTambien>hr{
+    width: 300px;
+}
+
+.copyright{
+    display: flex;
+    background-color: rgb(38, 35, 35);
+    justify-content: center;
+}
+
+.copyright>p, .copyright>p>a{
+    color: white;
+    font-family: 'Helvetica';
+}
+
+/* Contenedor y contenido amigos */
+.contenedorAmigos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(51, 51, 51, 0.3);
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: Helvetica;
+}
+
+.contenedorBuscar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+}
+
+.contenedorBuscar>div{
+    margin: 0px 10px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(51, 51, 51, 0.3);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.contenedorBuscar>div>input{
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+    resize: none;
+}
+
+#btnBuscar{
+    float: right;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+
+#tituloAmigos{
+    display: block;
+    text-align: center;
+    background-color: black;
+    margin: auto;
+    border-radius: 20px;
+    height: 10%;
+    width: 15%;
+    font-family: 'modernAge';
+    margin-bottom: -50px;
+    color: white;
+}
+
+.amigo{
+    flex: 0 0 24%;
+    height: auto;
+    text-align: center;
+    border: 1.5px solid black;
+    background-color: rgb(100,110,203, 0.5);
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+.amigo>h3{
+    margin-top: 2px;
+}
+
+.amigo>button{
+    margin-bottom: 5px;
+}
+
+.imgAmigo{
+    margin-top: 15px;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.nombreAmigo{
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+    margin-top: -15px;
+}
